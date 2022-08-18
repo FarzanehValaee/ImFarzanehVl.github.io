@@ -102,7 +102,11 @@
           font-weight: 500;
 }
 /* about section styling */
-section.about ,section.services , section.skills{
+section.about ,
+section.services , 
+section.skills ,
+section.teams
+{
           padding:100px 0;
 }
 .bg{
@@ -202,7 +206,9 @@ section.about ,section.services , section.skills{
 .services .serv-content .card .box{
           transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.services .serv-content .card:hover .box,
+.teams .carousel .card:hover .box
+{
           transform:scale(1.05)
 }
 .services .serv-content .card i{
@@ -306,8 +312,56 @@ section.about ,section.services , section.skills{
           color:rgb(192, 122, 179);
           background: none;
 }
+/* teams section styling */
+.teams .carousel .card{
 
+          padding:25px 35px;
+          text-align: center;
+          background-color: #dc8cdc;
+          transition: all 0.3s ease;
+          border-radius: 6px;
 
+}
+.teams .carousel .card .text{
+          font-size: 25px;
+          font-weight: 500;
+          margin:10px 0 7px 0;
+}
+.teams .carousel .card .box{
+          display: flex;
+          flex-direction: column;
+          align-items:center;
+          justify-content: center;
+}
+.teams .carousel .card .box img{
+
+          height:150px;
+          width:150px;
+          object-fit: cover;
+          border-radius:50%;
+          border:5px solid rgb(192, 122, 179);
+
+          
+} 
+.owl-dots{
+          text-align: center;
+          margin-top: 20px;
+}
+.owl-dot{
+          display: inline-block;
+          height:13px;
+          width:13px;
+          margin: 0 5px;
+          outline: none !important;
+          border-radius:50%;
+          border:2px solid rgb(192, 122, 179);
+          transition: all 0.3s ease;
+}
+.owl-dot.active{
+          background-color:rgb(192, 122, 179);
+          width:20px;
+          height:20px;
+}
 
 
 
