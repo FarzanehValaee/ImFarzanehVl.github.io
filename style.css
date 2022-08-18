@@ -105,7 +105,8 @@
 section.about ,
 section.services , 
 section.skills ,
-section.teams
+section.teams,
+section.contact
 {
           padding:100px 0;
 }
@@ -134,7 +135,8 @@ section.teams
           transform: translateX(-50%);
 }
 .about .about-content,
-.services .serv-content
+.services .serv-content,
+.contact .contact-content
 {
           display:flex;
           flex-wrap: wrap;
@@ -295,7 +297,9 @@ section.teams
           width: 70%;
 
 }
-.skills .skills-content .left a{
+.skills .skills-content .left a,
+button
+{
           display: inline-block;
           background-color:rgb(192, 122, 179);
           color:#fff;
@@ -308,7 +312,9 @@ section.teams
           margin-top: 20px;
 
 }
-.skills .skills-content .left a:hover{
+.skills .skills-content .left a:hover,
+button:hover
+{
           color:rgb(192, 122, 179);
           background: none;
 }
@@ -357,18 +363,92 @@ section.teams
           border:2px solid rgb(192, 122, 179);
           transition: all 0.3s ease;
 }
-.owl-dot.active{
+.owl-dot:active{
           background-color:rgb(192, 122, 179);
           width:20px;
           height:20px;
 }
 
+/* contact section styling  */
+.contact .contact-content .culmn{
+          width:calc(50% - 30px);
+}
+.contact .contact-content .left .text{
+          font-size: 20px;
+          font-weight:600;
+          margin-bottom:10px;
+}
+.contact .contact-content .left p{
+          text-align: justify;
 
+}
+.contact .contact-content .left .icons{
 
+          margin: 10px 0;
 
+}
+.contact .contact-content .left .row{
+          display: flex;
+          height: 65px;
+          align-items: center;
+}
+.contact .contact-content  .row .info{
+          margin-left: 30px;
+}
+.contact .contact-content .row i{
+          font-size:25px;
+          color: rgb(192, 122, 179);
 
+}
+.contact .contact-content  .row .info .head,
+.contact .contact-content .right .text
+{
+          font-weight:600;
+}
+.contact .contact-content .right .text{
+          margin-bottom: 5%;
+}
+.contact .right form .fields{
+          display: flex;
+}
 
-
+.contact .right form .fields .name{
+          margin-right:20px;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+          height:45px;
+          width: 100%;
+          margin-bottom: 15px;
+}
+.contact .right form .field input,
+.contact .right form .texterea textarea
+{
+          width: 100%;
+          height: 100%;
+          border: 1px solid rgb(192, 122, 179);
+          border-radius: 6px;
+          padding: 0 15px;
+          outline: none;
+          font-size: 17px;
+}
+.contact .right form .texterea textarea{
+          height: 200%;
+          margin-bottom: 2%;
+          resize: none;
+}
+form{
+          margin-bottom:50px;
+}
+.contact .right .button{
+          height:47px;
+          width: 170px;
+}
+.contact .right .button button{
+          height:100%;
+          width: 100%;
+          border:1px solid rgb(192, 122, 179);
+}
 
 
 /* responsive media query start */
@@ -456,6 +536,12 @@ section.teams
                     width: calc(50% - 10px);
                     margin-bottom:20px;
           }
+          .skills .skills-content .culmn,
+          .contact .contact-content .culmn
+          {
+                    width: 100%;
+                    margin-bottom: 35px;
+          }
 }
 @media (max-width: 690px){
           @media (max-width: 991px) {
@@ -475,10 +561,6 @@ section.teams
           }
           .services .serv-content .card{
                     width:100%;
-          }
-          .skills .skills-content .culmn{
-                    width: 100%;
-                    margin-bottom: 35px;
           }
           .skills .skills-content .right{
                     margin-left:0;
