@@ -102,7 +102,7 @@
           font-weight: 500;
 }
 /* about section styling */
-section.about ,section.services{
+section.about ,section.services , section.skills{
           padding:100px 0;
 }
 .bg{
@@ -221,6 +221,101 @@ section.about ,section.services{
           font-weight: 500;
           margin: 10px 0 7px 0;
 }
+/* services section styling  */
+.skills .skills-content .culmn{
+          width:calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+          font-size: 20px;
+          font-weight:600;
+          margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+          text-align:justify;
+}
+.skills .skills-content {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          /* margin:0  40%; */
+}
+.skills .skills-content .right{
+          margin-left:5%;
+          width:calc(50% - 30px);
+}
+.skills .skills-content .right .bars{
+          margin-bottom:15px;
+}
+.skills .skills-content .right .info{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+}
+.skills .skills-content .right span{
+          font-weight: 500;
+          font-size: 18px;
+}
+.skills .skills-content .right .line{
+          height:5px;
+          width:100%;
+          background-color:#f8c29b;
+          position: relative;
+}
+.skills .skills-content .right .line::before{
+          content: "";
+          position: absolute;
+          height:100%;
+          left: 0;
+          top:0;
+          background-color: #562956;
+}
+.skills .skills-content .right .line.html::before{
+          width: 100%;
+
+}
+.skills .skills-content .right .line.css::before{
+          width: 60%;
+
+}
+.skills .skills-content .right .line.js::before{
+          width: 80%;
+
+}
+.skills .skills-content .right .line.php::before{
+          width: 50%;
+
+}
+.skills .skills-content .right .line.mysql::before{
+          width: 70%;
+
+}
+.skills .skills-content .left a{
+          display: inline-block;
+          background-color:rgb(192, 122, 179);
+          color:#fff;
+          font-size: 15px;
+          padding:10px 20px;
+          font-weight: 500;
+          border-radius: 6px;
+          border:2px solid rgb(192, 122, 179);
+          transition: all 0.3s ease;
+          margin-top: 20px;
+
+}
+.skills .skills-content .left a:hover{
+          color:rgb(192, 122, 179);
+          background: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* responsive media query start */
 @media (max-width: 1300px) {
@@ -325,6 +420,14 @@ section.about ,section.services{
                     font-size: 25px;
           }
           .services .serv-content .card{
+                    width:100%;
+          }
+          .skills .skills-content .culmn{
+                    width: 100%;
+                    margin-bottom: 35px;
+          }
+          .skills .skills-content .right{
+                    margin-left:0;
                     width:100%;
           }
 
