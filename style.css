@@ -76,7 +76,7 @@ html{
 /* home section styling */
 .home{
           display: flex;
-          background:url(./img/WideBg.jpg) no-repeat center;
+          background:url(./img/bfh.jpg) no-repeat center;
           height: 100vh;
           color: #fff;
           min-height: 500px;
@@ -118,7 +118,7 @@ section.contact
           background-size: cover;
 }
 .bg-odd{
-          background:url(./img/WideBg.jpg) no-repeat center;
+          background:url(./img/bfh.jpg) no-repeat center;
           background-size: cover;
 }
 .title{
