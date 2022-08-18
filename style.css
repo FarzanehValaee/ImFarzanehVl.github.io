@@ -102,15 +102,15 @@
           font-weight: 500;
 }
 /* about section styling */
-section.about {
+section.about ,section.services{
           padding:100px 0;
 }
-.about{
+.bg{
           background:url(./img/WideBg.jpg) no-repeat center;
           background-size: cover;
           border-top: 1px solid rgb(192, 122, 179);
 }
-.about .title{
+.title{
           position:relative;
           text-align: center;
           font-size:40px;
@@ -119,7 +119,7 @@ section.about {
           margin-bottom:40px;
           padding-bottom:20px;
 }
-.about .title::before{
+.title::before{
           content:"";
           position:absolute;
           bottom:0px;
@@ -129,7 +129,9 @@ section.about {
           background:#fff;
           transform: translateX(-50%);
 }
-.about .about-content{
+.about .about-content,
+.services .serv-content
+{
           display:flex;
           flex-wrap: wrap;
           align-items: center;
@@ -183,7 +185,42 @@ section.about {
           color:rgb(192, 122, 179);
 
 }
-
+/* services section styling  */
+.services .serv-content .card{
+          width:calc(33% - 20px);
+          text-align:center;
+          background-color:#dc8cdc;
+          color:#fff;
+          border-radius: 6px;
+          padding: 20px 25px;
+          cursor:pointer;
+          transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+          background-color:#f8c29b;
+}
+.services .serv-content .card .box{
+          transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+          transform:scale(1.05)
+}
+.services .serv-content .card i{
+          font-size:50px;
+          color:#f8c29b;
+          transition: color 0.3s ease;
+}
+.services .serv-content .card:hover{
+          color:rgb(192, 122, 179);
+}
+.services .serv-content .card:hover i{
+          color:#e399cb;
+}
+.services .serv-content .card .text{
+          font-size:25px;
+          font-weight: 500;
+          margin: 10px 0 7px 0;
+}
 
 /* responsive media query start */
 @media (max-width: 1300px) {
@@ -264,6 +301,11 @@ section.about {
           }
           .about .about-content .right{
                     flex:100%;
+                    
+          }
+          .services .serv-content .card{
+                    width: calc(50% - 10px);
+                    margin-bottom:20px;
           }
 }
 @media (max-width: 690px){
@@ -282,10 +324,13 @@ section.about {
           .home .home-content .text-3{
                     font-size: 25px;
           }
+          .services .serv-content .card{
+                    width:100%;
+          }
 
 
 }
-@media (max-width: 690px){
+@media (max-width: 500px){
           .home .home-content .text-1{
                     font-size: 15px;
           }
