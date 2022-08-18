@@ -7,6 +7,9 @@
           font-family:'Poppins';
 
 }
+html{
+          scroll-behavior: smooth;
+}
 .max-width{
           max-width: 1300px;
           padding: 0 80px;
@@ -24,7 +27,7 @@
 }
 .navbar.sticky{
           padding:15px 0;
-          background-color:rgb(192, 122, 179);
+          background-color:#2c4b55;
 }
 .navbar .max-width{
           display: flex;
@@ -38,7 +41,7 @@
 
 }
 .navbar .logo a span{
-          color:rgb(192, 122, 179);
+          color:#3b7385;
           transition:all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -58,7 +61,7 @@
           transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-          color:rgb(192, 122, 179);
+          color:#6fa8bb(192, 122, 179);
 }
 .navbar.sticky .menu li a:hover{
           color:#fff;
@@ -73,7 +76,7 @@
 /* home section styling */
 .home{
           display: flex;
-          background:url(./img/personal\ Bg.jpg) no-repeat center;
+          background:url(./img/WideBg.jpg) no-repeat center;
           height: 100vh;
           color: #fff;
           min-height: 500px;
@@ -98,7 +101,7 @@
           margin:5px 0;
 }
 .home .home-content .text-3 span{
-          color:rgb(192, 122, 179);
+          color:#2c4b55;
           font-weight: 500;
 }
 /* about section styling */
@@ -110,17 +113,20 @@ section.contact
 {
           padding:100px 0;
 }
-.bg{
+.bg-even{
+          background:url(./img/Personal\ Bg.jpg) no-repeat center;
+          background-size: cover;
+}
+.bg-odd{
           background:url(./img/WideBg.jpg) no-repeat center;
           background-size: cover;
-          border-top: 1px solid rgb(192, 122, 179);
 }
 .title{
           position:relative;
           text-align: center;
           font-size:40px;
           font-weight: 500;
-          color:#fff;
+          color:rgb(45, 39, 39);
           margin-bottom:40px;
           padding-bottom:20px;
 }
@@ -131,7 +137,7 @@ section.contact
           left:50%;
           width:190px;
           height:3px;
-          background:#fff;
+          background:rgb(45, 39, 39);
           transform: translateX(-50%);
 }
 .about .about-content,
@@ -163,19 +169,19 @@ section.contact
 }
 .about .about-content a{
           display: inline-block;
-          background-color:rgb(192, 122, 179);
+          background-color:#2c4b55;;
           color:#fff;
           font-size: 15px;
           padding:10px 20px;
           font-weight: 500;
           margin-top: 10px;
           border-radius: 6px;
-          border:2px solid rgb(192, 122, 179);
+          border:2px solid #2c4b55;;
           transition: all 0.3s ease;
 
 }
 .about .about-content a:hover{
-          color:rgb(192, 122, 179);
+          color:#2c4b55;;
           background: none;
 }
 .about .about-content p{
@@ -188,22 +194,22 @@ section.contact
 }
 .about .about-content .right .text span{
 
-          color:rgb(192, 122, 179);
+          color:#2c4b55;;
 
 }
 /* services section styling  */
 .services .serv-content .card{
           width:calc(33% - 20px);
           text-align:center;
-          background-color:#dc8cdc;
-          color:#fff;
+          background-color:#84b4cc;
+          color:#2c4b55;
           border-radius: 6px;
           padding: 20px 25px;
           cursor:pointer;
           transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-          background-color:#f8c29b;
+          background-color:#c4c4c4;
 }
 .services .serv-content .card .box{
           transition: all 0.3s ease;
@@ -215,14 +221,14 @@ section.contact
 }
 .services .serv-content .card i{
           font-size:50px;
-          color:#f8c29b;
+          color:#c4c4c4;
           transition: color 0.3s ease;
 }
 .services .serv-content .card:hover{
-          color:rgb(192, 122, 179);
+          color:#2c4b55;;
 }
 .services .serv-content .card:hover i{
-          color:#e399cb;
+          color:#2c4b55;
 }
 .services .serv-content .card .text{
           font-size:25px;
@@ -266,7 +272,7 @@ section.contact
 .skills .skills-content .right .line{
           height:5px;
           width:100%;
-          background-color:#f8c29b;
+          background-color:#c4c4c4;
           position: relative;
 }
 .skills .skills-content .right .line::before{
@@ -275,7 +281,7 @@ section.contact
           height:100%;
           left: 0;
           top:0;
-          background-color: #562956;
+          background-color:#2c4b55;
 }
 .skills .skills-content .right .line.html::before{
           width: 100%;
@@ -301,13 +307,13 @@ section.contact
 button
 {
           display: inline-block;
-          background-color:rgb(192, 122, 179);
+          background-color:#2c4b55;;
           color:#fff;
           font-size: 15px;
           padding:10px 20px;
           font-weight: 500;
           border-radius: 6px;
-          border:2px solid rgb(192, 122, 179);
+          border:2px solid #2c4b55;;
           transition: all 0.3s ease;
           margin-top: 20px;
 
@@ -315,7 +321,7 @@ button
 .skills .skills-content .left a:hover,
 button:hover
 {
-          color:rgb(192, 122, 179);
+          color:#2c4b55;;
           background: none;
 }
 /* teams section styling */
@@ -323,7 +329,7 @@ button:hover
 
           padding:25px 35px;
           text-align: center;
-          background-color: #dc8cdc;
+          background-color: #84b4cc;
           transition: all 0.3s ease;
           border-radius: 6px;
 
@@ -345,7 +351,7 @@ button:hover
           width:150px;
           object-fit: cover;
           border-radius:50%;
-          border:5px solid rgb(192, 122, 179);
+          border:5px solid #2c4b55;;
 
           
 } 
@@ -360,11 +366,11 @@ button:hover
           margin: 0 5px;
           outline: none !important;
           border-radius:50%;
-          border:2px solid rgb(192, 122, 179);
+          border:2px solid #2c4b55;;
           transition: all 0.3s ease;
 }
 .owl-dot:active{
-          background-color:rgb(192, 122, 179);
+          background-color:#2c4b55;;
           width:20px;
           height:20px;
 }
@@ -397,7 +403,7 @@ button:hover
 }
 .contact .contact-content .row i{
           font-size:25px;
-          color: rgb(192, 122, 179);
+          color: #2c4b55;;
 
 }
 .contact .contact-content  .row .info .head,
@@ -426,7 +432,7 @@ button:hover
 {
           width: 100%;
           height: 100%;
-          border: 1px solid rgb(192, 122, 179);
+          border: 1px solid #2c4b55;;
           border-radius: 6px;
           padding: 0 15px;
           outline: none;
@@ -447,7 +453,17 @@ form{
 .contact .right .button button{
           height:100%;
           width: 100%;
-          border:1px solid rgb(192, 122, 179);
+          border:1px solid #08485e;
+}
+/* footer styling  */
+footer{
+          padding:3% 1%;
+          background-color: #2c4b55;
+          color:#fff;
+          text-align:center;
+}
+footer a{
+          color:rgb(96, 83, 138);
 }
 
 
